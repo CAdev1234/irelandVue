@@ -11,12 +11,16 @@
 }
 .font-coolvetica {
     font-family: CoolveticaRg;
+    letter-spacing: 3px;
 }
 button:focus {
   outline: none;
 }
 input:focus {
   outline: none;
+}
+.row {
+  margin: 0px;
 }
 /* width */
 ::-webkit-scrollbar {
