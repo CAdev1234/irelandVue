@@ -8,6 +8,8 @@ import Portfolio from '../views/Portfolio'
 import Portfolio1 from '../views/Portfolio1'
 import Portfolio2 from '../views/Portfolio2'
 import Portfolio3 from '../views/Portfolio3'
+import Portfolio4 from '../views/Portfolio4'
+import Misc from '../views/Misc'
 
 Vue.use(VueRouter)
 
@@ -51,6 +53,16 @@ const routes = [
     path: '/portfolio3',
     name: 'Portfolio3',
     component: Portfolio3
+  },
+  {
+    path: '/portfolio4',
+    name: 'Portfolio4',
+    component: Portfolio4
+  },
+  {
+    path: '/misc',
+    name: 'Misc',
+    component: Misc  
   }
   // {
   //   path: '/about',

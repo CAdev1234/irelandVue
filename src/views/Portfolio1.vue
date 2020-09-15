@@ -39,13 +39,13 @@
                     </v-card>
                     <div style="width:300px;margin-left:20px">
                         <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size:14pt">
                             This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
 new recipe to try, hence the name potluck.
                         </div>
-                        <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+                        <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                     </div>
                 </div>
                 <div style="direction: ltr; display: flex; margin-bottom: 20px">
@@ -59,13 +59,13 @@ new recipe to try, hence the name potluck.
                     </v-card>
                     <div style="width:300px;margin-left:20px">
                         <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size:14pt">
                             This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
 new recipe to try, hence the name potluck.
                         </div>
-                        <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+                        <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                     </div>
                 </div>
                 <div style="direction: ltr; display: flex; margin-bottom: 20px">
@@ -79,13 +79,13 @@ new recipe to try, hence the name potluck.
                     </v-card>
                     <div style="width:300px;margin-left:20px">
                         <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size:14pt">
                             This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
 new recipe to try, hence the name potluck.
                         </div>
-                        <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+                        <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                     </div>
                 </div>
                 <div style="direction: ltr; display: flex;">
@@ -99,13 +99,13 @@ new recipe to try, hence the name potluck.
                     </v-card>
                     <div style="width:300px;margin-left:20px">
                         <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size:14pt">
                             This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
 new recipe to try, hence the name potluck.
                         </div>
-                        <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+                        <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@ export default {
     height: 600px;
     direction: rtl;
     margin-right: 100px; 
-    padding-left: 10px
+    padding-left: 20px
 }
 .portfolio-card {
     background-color: rgb(33, 33, 33);

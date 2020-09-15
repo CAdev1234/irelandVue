@@ -34,7 +34,7 @@
                             <v-card-title class="headline mb-1 font-coolvetica" style="font-size: 20pt;color: white;">
                                 Potluck
                             </v-card-title>
-                            <v-card-text style="color: white;line-height: 1.6;">
+                            <v-card-text>
                                     This project was about learning how to play 
 around with  nodejs and connecting an API 
 the mealdb api to it. Everytime you reload 
@@ -42,14 +42,14 @@ you get a new recipe to try, hence the name
 potluck.
                             </v-card-text>
                             <v-card-actions>
-                                <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;margin-left: 10px;">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+                                <div>View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                             </v-card-actions>
                         </v-card>
                         <v-card class="mx-auto portfolio-card">
                             <v-card-title class="headline mb-1 font-coolvetica" style="font-size: 20pt;color: white;">
                                 Potluck
                             </v-card-title>
-                            <v-card-text style="color: white;line-height: 1.6;">
+                            <v-card-text>
                                     This project was about learning how to play 
 around with  nodejs and connecting an API 
 the mealdb api to it. Everytime you reload 
@@ -57,14 +57,14 @@ you get a new recipe to try, hence the name
 potluck.
                             </v-card-text>
                             <v-card-actions>
-                                <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;margin-left: 10px;">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+                                <div>View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                             </v-card-actions>
                         </v-card>
                         <v-card class="mx-auto portfolio-card">
                             <v-card-title class="headline mb-1 font-coolvetica" style="font-size: 20pt;color: white;">
                                 Potluck
                             </v-card-title>
-                            <v-card-text style="color: white;line-height: 1.6;">
+                            <v-card-text>
                                     This project was about learning how to play 
 around with  nodejs and connecting an API 
 the mealdb api to it. Everytime you reload 
@@ -72,7 +72,7 @@ you get a new recipe to try, hence the name
 potluck.
                             </v-card-text>
                             <v-card-actions>
-                                <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;margin-left: 10px;">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+                                <div>View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                             </v-card-actions>
                         </v-card>
                     </v-col>
@@ -81,7 +81,7 @@ potluck.
                             <v-card-title class="headline mb-1 font-coolvetica" style="font-size: 20pt;color: white;">
                                 Potluck
                             </v-card-title>
-                            <v-card-text style="color: white;line-height: 1.6;">
+                            <v-card-text>
                                     This project was about learning how to play 
 around with  nodejs and connecting an API 
 the mealdb api to it. Everytime you reload 
@@ -93,7 +93,7 @@ reload you get a new recipe to try, hence the
 name potluck.
                             </v-card-text>
                             <v-card-actions>
-                                <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;margin-left: 10px;">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+                                <div>View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                             </v-card-actions>
                         </v-card>
                     </v-col>
@@ -102,7 +102,7 @@ name potluck.
                             <v-card-title class="headline mb-1 font-coolvetica" style="font-size: 20pt;color: white;">
                                 Potluck
                             </v-card-title>
-                            <v-card-text style="color: white;line-height: 1.6;">
+                            <v-card-text>
                                     This project was about learning how to play 
 around with  nodejs and connecting an API 
 the mealdb api to it. Everytime you reload 
@@ -114,7 +114,7 @@ reload you get a new recipe to try, hence the
 name potluck.
                             </v-card-text>
                             <v-card-actions>
-                                <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;margin-left: 10px;">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+                                <div>View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                             </v-card-actions>
                         </v-card>
                     </v-col>
@@ -168,6 +168,20 @@ export default {
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+.v-card__text {
+    color: white !important;
+    line-height: 1.6;
+    font-size:14pt;
+    padding-bottom: 0px;
+}
+.v-card__actions div{
+    margin-top: 20px;
+    color: rgb(242, 254, 2);
+    text-decoration: underline;
+    margin-left: 10px;
+    font-size:14pt;
+    padding-bottom: 0px !important;
 }
 .menu .menu-btn {
     background: #f2fe02;
