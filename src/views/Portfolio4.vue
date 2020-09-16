@@ -13,13 +13,13 @@
                     <button class="menu-btn" v-if="isshowed_menu_list === 'block'" @click="MenuBtn_Clicked" style="text-align: center;">&#x2573;</button>
                     <div class="sub-menu-list" v-bind:style="{display: isshowed_menu_list}">
                         <div class="sub-menu">
-                            <v-btn text small>Home</v-btn>
+                            <v-btn text small @click="$router.push('/')">Home</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small color="error">Blog</v-btn>
+                            <v-btn text small @click="$router.push('/blog')">Blog</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small>Misc</v-btn>
+                            <v-btn text small @click="$router.push('/misc')">Misc</v-btn>
                         </div>
                         <div class="sub-menu">
                             <v-btn text small color="error">Contact</v-btn>
@@ -28,13 +28,13 @@
                 </v-col>
             </v-row>
             <div class="portfolio-main">
-                <div style="display: flex;width:100%;margin-bottom: 20px;direction:ltr">
+                <div style="display: flex;width:100%;margin-bottom: 40px;direction:ltr">
                     <div>
                         <v-card class="portfolio-card"></v-card>
                     </div>
                     <div class="portfolio-detail-right">
                         <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
                             This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
@@ -45,11 +45,11 @@ new recipe to try, hence the name potluck.
                         </div>
                     </div>
                 </div>
-                <div style="display: flex;width:100%;margin-bottom: 20px;direction:ltr">
-                    <div style="width: 500px;margin-left:20px"></div>
+                <div style="display: flex;width:100%;margin-bottom: 40px;direction:ltr">
+                    <div class="portfolio-detail-left-empty"></div>
                     <div class="portfolio-detail-left">
                         <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
                             This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
@@ -63,13 +63,13 @@ new recipe to try, hence the name potluck.
                         <v-card class="portfolio-card"></v-card>
                     </div>
                 </div>
-                <div style="display: flex;width:100%;margin-bottom: 20px;direction:ltr">
+                <div style="display: flex;width:100%;margin-bottom: 40px;direction:ltr">
                     <div>
                         <v-card class="portfolio-card"></v-card>
                     </div>
                     <div class="portfolio-detail-right">
                         <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
                             This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
@@ -80,11 +80,11 @@ new recipe to try, hence the name potluck.
                         </div>
                     </div>
                 </div>
-                <div style="display: flex;width:100%;margin-bottom: 20px;direction:ltr">
-                    <div style="width: 500px;margin-left:20px"></div>
+                <div style="display: flex;width:100%;margin-bottom: 40px;direction:ltr">
+                    <div class="portfolio-detail-left-empty"></div>
                     <div class="portfolio-detail-left">
                         <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
                             This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
@@ -147,6 +147,10 @@ export default {
     direction: rtl;
     margin-left: 100px;
 }
+.portfolio-detail-left-empty {
+    width: 500px;
+    margin-left:20px;
+}
 .portfolio-card {
     border-radius: 10px;
     background-color: #212121;
@@ -185,5 +189,12 @@ export default {
     text-align: left;
     margin-right: 10px;
 }
-
+@media only screen and ( max-width: 1600px) {
+    .portfolio-page {
+        padding-left: 10px;
+    }
+    .portfolio-detail-left-empty {
+        width: 0px;
+    }
+}
 </style>

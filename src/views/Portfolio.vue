@@ -13,13 +13,13 @@
                     <button class="menu-btn" v-if="isshowed_menu_list === 'block'" @click="MenuBtn_Clicked" style="text-align: center;">&#x2573;</button>
                     <div class="sub-menu-list" v-bind:style="{display: isshowed_menu_list}">
                         <div class="sub-menu">
-                            <v-btn text small>Home</v-btn>
+                            <v-btn text small @click="$router.push('/')">Home</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small color="error">Blog</v-btn>
+                            <v-btn text small @click="$router.push('/blog')">Blog</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small>Misc</v-btn>
+                            <v-btn text small @click="$router.push('/misc')">Misc</v-btn>
                         </div>
                         <div class="sub-menu">
                             <v-btn text small color="error">Contact</v-btn>
@@ -29,8 +29,8 @@
             </v-row>
             <div class="portfolio-main">
                 <v-row>
-                    <v-col cols="3" sm="3" md="3" lg="3" xl="4">
-                        <div style="width:500px">
+                    <v-col cols="12" sm="12" md="4" lg="4" xl="4">
+                        <div style="width:100%">
                             <v-card class="mx-auto portfolio-card" style="background-color: #212121">
                                 <v-list-item three-line>
                                 <v-list-item-content>
@@ -49,8 +49,8 @@
                             <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                         </div>
                     </v-col>
-                    <v-col cols="3" sm="3" md="3" lg="3" xl="4">
-                        <div style="width:500px">
+                    <v-col cols="12" sm="12" md="4" lg="4" xl="4">
+                        <div style="width:100%">
                             <v-card class="mx-auto portfolio-card" style="background-color: #212121">
                                 <v-list-item three-line>
                                 <v-list-item-content>
@@ -69,8 +69,8 @@
                             <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                         </div>
                     </v-col>
-                    <v-col cols="3" sm="3" md="3" lg="3" xl="4">
-                        <div style="width:500px">
+                    <v-col cols="12" sm="12" md="4" lg="4" xl="4">
+                        <div style="width:100%">
                             <v-card class="mx-auto portfolio-card" style="background-color: #212121">
                                 <v-list-item three-line>
                                 <v-list-item-content>
@@ -91,8 +91,8 @@
                     </v-col>
                 </v-row>
                 <v-row>
-                    <v-col cols="3" sm="3" md="3" lg="3" xl="4">
-                        <div style="width:500px">
+                    <v-col cols="12" sm="12" md="4" lg="4" xl="4">
+                        <div style="width:100%">
                             <v-card class="mx-auto portfolio-card" style="background-color: #212121">
                                 <v-list-item three-line>
                                 <v-list-item-content>
@@ -102,17 +102,17 @@
                                 </v-list-item>
                             </v-card>
                             <div class="font-coolvetica" style="color: white;margin-top: 40px;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                            <div style="color: #BDBDBD">
+                            <div style="color: #BDBDBD;font-size:14pt">
                                 This project was about learning how to play 
     around with  nodejs and connecting an API the 
     mealdb api to it. Everytime you reload you get a 
     new recipe to try, hence the name potluck.
                             </div>
-                            <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+                            <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                         </div>
                     </v-col>
-                    <v-col cols="3" sm="3" md="3" lg="3" xl="4">
-                        <div style="width:500px">
+                    <v-col cols="12" sm="12" md="4" lg="4" xl="4">
+                        <div style="width:100%">
                             <v-card class="mx-auto portfolio-card" style="background-color: #212121">
                                 <v-list-item three-line>
                                 <v-list-item-content>
@@ -122,17 +122,17 @@
                                 </v-list-item>
                             </v-card>
                             <div class="font-coolvetica" style="color: white;margin-top: 40px;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                            <div style="color: #BDBDBD">
+                            <div style="color: #BDBDBD;font-size:14pt">
                                 This project was about learning how to play 
     around with  nodejs and connecting an API the 
     mealdb api to it. Everytime you reload you get a 
     new recipe to try, hence the name potluck.
                             </div>
-                            <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+                            <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                         </div>
                     </v-col>
-                    <v-col cols="3" sm="3" md="3" lg="3" xl="4">
-                        <div style="width:500px">
+                    <v-col cols="12" sm="12" md="4" lg="4" xl="4">
+                        <div style="width:100%">
                             <v-card class="mx-auto portfolio-card" style="background-color: #212121">
                                 <v-list-item three-line>
                                 <v-list-item-content>
@@ -142,17 +142,16 @@
                                 </v-list-item>
                             </v-card>
                             <div class="font-coolvetica" style="color: white;margin-top: 40px;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                            <div style="color: #BDBDBD">
+                            <div style="color: #BDBDBD; font-size:14pt">
                                 This project was about learning how to play 
     around with  nodejs and connecting an API the 
     mealdb api to it. Everytime you reload you get a 
     new recipe to try, hence the name potluck.
                             </div>
-                            <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+                            <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
                         </div>
                     </v-col>
                 </v-row>
-                
             </div>
         </v-container>
     </div>
@@ -231,5 +230,17 @@ export default {
     text-align: left;
     margin-right: 10px;
 }
-
+@media only screen and ( max-width: 1000px) {
+    .portfolio-page {
+        padding-left: 10px;
+    }
+    .menu {
+        position: absolute;
+        top: 80px;
+        right: 0px;
+    }
+    .place-content {
+        margin: 0px;
+    }
+}
 </style>

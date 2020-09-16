@@ -29,7 +29,7 @@
             </v-row>
             <div class="portfolio-main">
                 <v-row style="direction: ltr;">
-                    <v-col cols="12" sm="4" md="4" lg="4" xl="4">
+                    <v-col cols="12" sm="12" md="4" lg="4" xl="4">
                         <v-card class="mx-auto portfolio-card">
                             <v-card-title class="headline mb-1 font-coolvetica" style="font-size: 20pt;color: white;">
                                 Potluck
@@ -76,7 +76,7 @@ potluck.
                             </v-card-actions>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" sm="4" md="4" lg="4" xl="4">
+                    <v-col cols="12" sm="12" md="4" lg="4" xl="4">
                         <v-card class="mx-auto portfolio-card">
                             <v-card-title class="headline mb-1 font-coolvetica" style="font-size: 20pt;color: white;">
                                 Potluck
@@ -97,7 +97,7 @@ name potluck.
                             </v-card-actions>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" sm="4" md="4" lg="4" xl="4" style="padding-top: 250px">
+                    <v-col cols="12" sm="12" md="4" lg="4" xl="4" style="padding-top: 250px">
                         <v-card class="mx-auto portfolio-card">
                             <v-card-title class="headline mb-1 font-coolvetica" style="font-size: 20pt;color: white;">
                                 Potluck
@@ -209,5 +209,9 @@ export default {
     text-align: left;
     margin-right: 10px;
 }
-
+@media only screen and ( max-width: 900px) {
+    .portfolio-page {
+        padding-left: 10px;
+    }
+}
 </style>

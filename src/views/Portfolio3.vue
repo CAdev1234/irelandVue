@@ -31,7 +31,7 @@
                 <div style="display: flex;width:100%;margin-bottom: 20px;direction:ltr;margin-left:20px">
                     <div class="portfolio-detail-left">
                         <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
                             This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
@@ -42,16 +42,15 @@ new recipe to try, hence the name potluck.
                     <div>
                         <v-card class="portfolio-card"></v-card>
                     </div>
-                    <div class="portfolio-detail-right"></div>
                 </div>
                 <div style="display: flex;width:100%;margin-bottom: 20px;direction:ltr">
-                    <div class="portfolio-detail-left"></div>
+                    <div class="portfolio-detail-left-empty"></div>
                     <div>
                         <v-card class="portfolio-card"></v-card>
                     </div>
                     <div class="portfolio-detail-right">
                         <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
                             This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
@@ -63,7 +62,7 @@ new recipe to try, hence the name potluck.
                 <div style="display: flex;width:100%;margin-bottom: 20px;direction:ltr">
                     <div class="portfolio-detail-left">
                         <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
                             This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
@@ -77,13 +76,13 @@ new recipe to try, hence the name potluck.
                     <div class="portfolio-detail-right"></div>
                 </div>
                 <div style="display: flex;width:100%;margin-bottom: 20px;direction:ltr">
-                    <div class="portfolio-detail-left"></div>
+                    <div class="portfolio-detail-left-empty"></div>
                     <div>
                         <v-card class="portfolio-card"></v-card>
                     </div>
                     <div class="portfolio-detail-right">
                         <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
                             This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
@@ -141,6 +140,10 @@ export default {
     direction: rtl;
     margin-left: 70px;
 }
+.portfolio-detail-left-empty {
+    width: 20%;
+    margin-left: 70px;
+}
 .portfolio-card {
     border-radius: 10px;
     background-color: #212121;
@@ -179,5 +182,12 @@ export default {
     text-align: left;
     margin-right: 10px;
 }
-
+@media only screen and ( max-width: 1300px) {
+    .portfolio-page {
+        padding-left: 10px;
+    }
+    .portfolio-detail-left-empty {
+        width: 0px;
+    }
+}
 </style>

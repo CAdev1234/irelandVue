@@ -2,10 +2,10 @@
     <div class="home-page">
         <v-container fluid>
             <v-row>
-                <v-col cols="3" sm="4" md="4" lg="4" xl="4" class="hello-kush">
+                <v-col cols="12" sm="12" md="5" lg="4" xl="4" class="hello-kush">
                     <div class="font-coolvetica" style="font-size: 70pt;color:white;">Hello, i'm</div>
                     <div class="font-coolvetica" style="font-size: 70pt;color:white;">An Kush</div><br/><br/>
-                    <div style="color: #616161; font-size: 16pt">
+                    <div style="color: #616161; font-size: 16pt;height: 250px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
                         <p>Info/about</p><br/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p><br/>
                         <p>elit. Docne frementum tincidunt mi eu elementum.</p><br/>
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                 </v-col>
-                <v-col cols="6" sm="7" md="7" lg="6" xl="6" class="feature">
+                <v-col cols="12" sm="12" md="6" lg="6" xl="6" class="feature">
                     <div class="blog-part">
                         <div class="blog-feature" style="margin-right: 2%;width: 48%;">
                             <div class="font-coolvetica" style="color: #f2fe02;font-size:25pt">Featured Blogs</div>
@@ -78,21 +78,21 @@
                     </div>
                     <div class="place-content"></div>
                 </v-col>
-                <v-col cols="2" sm="1" md="1" lg="2" xl="2" class="menu">
+                <v-col cols="12" sm="12" md="1" lg="2" xl="2" class="menu">
                     <button class="menu-btn" v-if="isshowed_menu_list === 'none'" @click="MenuBtn_Clicked">Menu/NavBar</button>
                     <button class="menu-btn" v-if="isshowed_menu_list === 'block'" @click="MenuBtn_Clicked" style="text-align: left; padding-left:15px">&#x2573;</button>
                     <div class="sub-menu-list" v-bind:style="{display: isshowed_menu_list}">
                         <div class="sub-menu">
-                            <v-btn text small>Blogs</v-btn>
+                            <v-btn text small @click="$router.push('/blog')">Blogs</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small color="error">Portfolio</v-btn>
+                            <v-btn text small @click="$router.push('/portfolio')">Portfolio</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small>Misc</v-btn>
+                            <v-btn text small @click="$router.push('/misc')">Misc</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small color="error">Contact</v-btn>
+                            <v-btn text small >Contact</v-btn>
                         </div>
                     </div>
                 </v-col>
@@ -134,7 +134,7 @@ export default {
 }
 .hello-kush .social-media-handle {
     color: #616161;
-    position: absolute;
+    margin-top: 200px;
     bottom: 20px;
 }
 .feature .blog-part {
@@ -193,5 +193,27 @@ export default {
 .menu .sub-menu {
     text-align: left;
     margin-right: 10px;
+}
+@media only screen and ( max-width: 1366px) {
+    .home-page {
+        height: 100%;
+        padding-left: 0px;
+    }
+    .menu {
+        position: absolute;
+        top: 100px;
+        right: 0px;
+    }
+}
+@media only screen and ( max-width: 720px) {
+    .home-page {
+        height: 100%;
+        padding-left: 0px;
+    }
+    .menu {
+        position: absolute;
+        top: 100px;
+        right: 0px;
+    }
 }
 </style>

@@ -13,13 +13,13 @@
                     <button class="menu-btn" v-if="isshowed_menu_list === 'block'" @click="MenuBtn_Clicked" style="text-align: center;">&#x2573;</button>
                     <div class="sub-menu-list" v-bind:style="{display: isshowed_menu_list}">
                         <div class="sub-menu">
-                            <v-btn text small>Home</v-btn>
+                            <v-btn text small @click="$router.push('/')">Home</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small color="error">Blog</v-btn>
+                            <v-btn text small @click="$router.push('/blog')">Blog</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small>Misc</v-btn>
+                            <v-btn text small @click="$router.push('/portfolio')">Portfolio</v-btn>
                         </div>
                         <div class="sub-menu">
                             <v-btn text small color="error">Contact</v-btn>
@@ -28,10 +28,10 @@
                 </v-col>
             </v-row>
             <div class="misc-main">
-                <div style="display: flex;width:100%;margin-bottom: 40px;direction:ltr">
+                <div class="misc-item">
                     <div class="misc-detail-left">
                         <div class="font-coolvetica" style="color: #f2fe02;font-size: 30pt;margin-bottom: 20px;">Quote of the day</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 100px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
                             “Any fool can write code that a 
 computer can understand. Good 
 programmers write code that humans 
@@ -42,23 +42,23 @@ can understand.” – Martin Fowler
                         <v-card class="misc-card"></v-card>
                     </div>
                 </div>
-                <div style="display: flex;width:100%;margin-bottom: 40px;direction:ltr">
+                <div class="misc-item">
                     <div>
                         <v-card class="misc-card"></v-card>
                     </div>
                     <div class="misc-detail-right">
                         <div class="font-coolvetica" style="color: #f2fe02;font-size: 30pt;margin-bottom: 20px;">Programming Joke</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
                             <span style="font-size: 25pt">Me:</span> I'm so sorry, my dog ate my homework<br/>
                             <span style="font-size: 25pt">Proffesor:</span>  Your dog ate your coding assignment?<br/> 
                             <span style="font-size: 25pt">Me:</span>Yeah, it took him a couple of bytes
                         </div>
                     </div>
                 </div>
-                <div style="display: flex;width:100%;margin-bottom: 40px;direction:ltr">
+                <div class="misc-item">
                     <div class="misc-detail-left">
                         <div class="font-coolvetica" style="color: #f2fe02;font-size: 30pt;margin-bottom: 20px;">Quote of the day</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 100px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
                             “Any fool can write code that a 
 computer can understand. Good 
 programmers write code that humans 
@@ -69,13 +69,13 @@ can understand.” – Martin Fowler
                         <v-card class="misc-card"></v-card>
                     </div>
                 </div>
-                <div style="display: flex;width:100%;margin-bottom: 40px;direction:ltr">
+                <div class="misc-item">
                     <div>
                         <v-card class="misc-card"></v-card>
                     </div>
                     <div class="misc-detail-right">
                         <div class="font-coolvetica" style="color: #f2fe02;font-size: 30pt;margin-bottom: 20px;">Programming Joke</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt">
+                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
                             <span style="font-size: 25pt">Me:</span> I'm so sorry, my dog ate my homework<br/>
                             <span style="font-size: 25pt">Proffesor:</span>  Your dog ate your coding assignment?<br/> 
                             <span style="font-size: 25pt">Me:</span>Yeah, it took him a couple of bytes
@@ -127,6 +127,12 @@ export default {
     height: 600px;
     direction: rtl;
 }
+.misc-item {
+    display: flex;
+    width:100%;
+    margin-bottom: 40px;
+    direction:ltr;
+}
 .misc-detail-left {
     width: 400px;
     direction: ltr;
@@ -177,5 +183,15 @@ export default {
     text-align: left;
     margin-right: 10px;
 }
-
+@media only screen and ( max-width: 1600px) {
+    .misc-page {
+        padding-left: 10px;
+    }
+    .misc-item {
+        display: block;
+    }
+    .misc-detail-right {
+        margin-left: 20px;
+    }
+}
 </style>

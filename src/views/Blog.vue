@@ -2,38 +2,38 @@
     <div class="blog-page">
         <v-container fluid>
             <v-row>
-                <v-col cols="3" sm="4" md="4" lg="4" xl="2" class="hello-kush">
+                <v-col cols="12" sm="3" md="4" lg="2" xl="2" class="hello-kush">
                     <div class="font-coolvetica" style="font-size: 70pt;color:white;">Blogs</div>
                 </v-col>
-                <v-col cols="6" sm="7" md="7" lg="6" xl="7">
+                <v-col cols="12" sm="8" md="7" lg="7" xl="7">
                     <div class="place-content"></div>
                 </v-col>
-                <v-col cols="3" sm="1" md="1" lg="2" xl="3" class="menu">
+                <v-col cols="3" sm="1" md="1" lg="3" xl="3" class="menu">
                     <button class="menu-btn" v-if="isshowed_menu_list === 'none'" @click="MenuBtn_Clicked">
                         <i class="fa fa-reorder" style="font-size:24px"></i>
                     </button>
                     <button class="menu-btn" v-if="isshowed_menu_list === 'block'" @click="MenuBtn_Clicked" style="text-align: center;">&#x2573;</button>
                     <div class="sub-menu-list" v-bind:style="{display: isshowed_menu_list}">
                         <div class="sub-menu">
-                            <v-btn text small>Home</v-btn>
+                            <v-btn text small @click="$router.push('/')">Home</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small color="error">Portfolio</v-btn>
+                            <v-btn text small @click="$router.push('/portfolio')">Portfolio</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small>Misc</v-btn>
+                            <v-btn text small @click="$router.push('/misc')">Misc</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small color="error">Contact</v-btn>
+                            <v-btn text small>Contact</v-btn>
                         </div>
                     </div>
                 </v-col>
             </v-row>
             <v-row>
-                <v-col cols="9" sm="11" md="11" lg="10" xl="9" class="blog-list">
+                <v-col cols="12" sm="7" md="8" lg="9" xl="9" class="blog-list">
                     <v-row>
                         <v-col cols="9" sm="6" md="6" xl="4">
-                            <v-card class="mx-auto blog-card" style="background-color: #212121">
+                            <v-card class="mx-auto blog-card" style="background-color: #212121" @click="$router.push('/blog1')">
                                 <v-list-item three-line>
                                 <v-list-item-content>
                                     <v-list-item-title class="headline mb-1 card-title font-coolvetica">Hello Sunshine</v-list-item-title>
@@ -96,7 +96,7 @@
                         </v-col>
                     </v-row>
                 </v-col>
-                <v-col cols="3" sm="1" md="1" lg="2" xl="3">
+                <v-col cols="12" sm="5" md="4" lg="3" xl="3">
                     <div style="display: flex; margin-top: 50px; margin-left: 20px;">
                         <input class="blog-search" type="text" placeholder="Search">
                         <button class="blog-search-btn"><i class="fa fa-search" style="font-size:24px"></i></button>
@@ -211,5 +211,23 @@ export default {
     width: 60px;
     border-radius: 0px 20px 20px 0px;
     margin-left: 5px;
+}
+@media only screen and ( max-width: 929px) {
+    .blog-page {
+        padding-left: 10px;
+    }
+    .menu {
+        position: absolute;
+        top: 80px;
+        right: 0px;
+    }
+    .place-content {
+        margin: 0px;
+    }
+}
+@media only screen and ( max-width: 600px ) {
+    .blog-page {
+        height: 100%;
+    }
 }
 </style>

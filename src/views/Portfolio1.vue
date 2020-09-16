@@ -13,13 +13,13 @@
                     <button class="menu-btn" v-if="isshowed_menu_list === 'block'" @click="MenuBtn_Clicked" style="text-align: center;">&#x2573;</button>
                     <div class="sub-menu-list" v-bind:style="{display: isshowed_menu_list}">
                         <div class="sub-menu">
-                            <v-btn text small>Home</v-btn>
+                            <v-btn text small @click="$router.push('/')">Home</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small color="error">Blog</v-btn>
+                            <v-btn text small @click="$router.push('/blog')">Blog</v-btn>
                         </div>
                         <div class="sub-menu">
-                            <v-btn text small>Misc</v-btn>
+                            <v-btn text small @click="$router.push('/misc')">Misc</v-btn>
                         </div>
                         <div class="sub-menu">
                             <v-btn text small color="error">Contact</v-btn>
@@ -184,5 +184,13 @@ export default {
     text-align: left;
     margin-right: 10px;
 }
-
+@media only screen and ( max-width: 900px) {
+    .portfolio-page {
+        padding-left: 10px;
+    }
+    .portfolio-main div {
+        display: block !important;
+        margin-top: 20px;
+    }
+}
 </style>
