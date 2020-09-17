@@ -33,66 +33,26 @@
                 <v-col cols="12" sm="7" md="8" lg="9" xl="9" class="blog-list">
                     <v-row>
                         <v-col cols="9" sm="6" md="6" xl="4">
-                            <v-card class="mx-auto blog-card" style="background-color: #212121" @click="$router.push('/blog1')">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1 card-title font-coolvetica">Hello Sunshine</v-list-item-title>
-                                    <v-list-item-subtitle class="card-detail">information about the blog</v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                            </v-card>
+                            <div @click="$router.push('/blog1')">
+                                <BlogCard title="Hello Sunshine" bgColor="#212121"/>
+                            </div>
                         </v-col>
                         <v-col cols="9" sm="6" md="6" xl="4">
-                            <v-card class="mx-auto blog-card" style="background-color: #424242">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1 card-title font-coolvetica">Blog title</v-list-item-title>
-                                    <v-list-item-subtitle class="card-detail">information about the blog</v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                            </v-card>
+                            <BlogCard title="Blog title" bgColor="#424242"/>
                         </v-col>
                         <v-col cols="9" sm="6" md="6" xl="4">
-                            <v-card class="mx-auto blog-card" style="background-color: #616161">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1 card-title font-coolvetica">Blog title</v-list-item-title>
-                                    <v-list-item-subtitle class="card-detail">information about the blog</v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                            </v-card>
+                            <BlogCard title="Blog title" bgColor="#616161"/>
                         </v-col>
                     </v-row>
                     <v-row>
                         <v-col cols="9" sm="6" md="6" xl="4">
-                            <v-card class="mx-auto blog-card" style="background-color: #757575">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1 card-title font-coolvetica">Blog title</v-list-item-title>
-                                    <v-list-item-subtitle class="card-detail">information about the blog</v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                            </v-card>
+                            <BlogCard title="Blog title" bgColor="#757575"/>
                         </v-col>
                         <v-col cols="9" sm="6" md="6" xl="4">
-                            <v-card class="mx-auto blog-card" style="background-color: #757575">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1 card-title font-coolvetica">Blog title</v-list-item-title>
-                                    <v-list-item-subtitle class="card-detail">information about the blog</v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                            </v-card>
+                            <BlogCard title="Blog title" bgColor="#757575"/>
                         </v-col>
                         <v-col cols="9" sm="6" md="6" xl="4">
-                            <v-card class="mx-auto blog-card" style="background-color: #757575">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1 card-title font-coolvetica">Blog title</v-list-item-title>
-                                    <v-list-item-subtitle class="card-detail">information about the blog</v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                            </v-card>
+                            <BlogCard title="Blog title" bgColor="#757575"/>
                         </v-col>
                     </v-row>
                 </v-col>
@@ -108,11 +68,15 @@
     </div>
 </template>
 <script>
+import BlogCard from '../components/BlogCard'
 export default {
     data() {
         return {
             isshowed_menu_list: "none",
         }
+    },
+    components: {
+        BlogCard
     },
     methods: {
         MenuBtn_Clicked() {
@@ -148,22 +112,6 @@ export default {
 .blog-list .row {
     direction: ltr;
     padding-left: 10px;
-}
-.card-title {
-    color: white;
-    font-size: 23pt !important;
-}
-.card-detail {
-    color: #BDBDBD !important;
-    font-size: 16pt !important;
-}
-.blog-card {
-    position: relative;
-    border-radius: 10px !important;
-    padding: 10px;
-    width: 100%;
-    height: 250px;
-    direction: ltr;
 }
 .place-content {
     bottom: 20px;

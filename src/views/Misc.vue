@@ -28,70 +28,32 @@
                 </v-col>
             </v-row>
             <div class="misc-main">
-                <div class="misc-item">
-                    <div class="misc-detail-left">
-                        <div class="font-coolvetica" style="color: #f2fe02;font-size: 30pt;margin-bottom: 20px;">Quote of the day</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 100px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
-                            “Any fool can write code that a 
+                <MiscLeftItem title="Quote of the day" detail="“Any fool can write code that a 
 computer can understand. Good 
 programmers write code that humans 
-can understand.” – Martin Fowler
-                        </div>
-                    </div>
-                    <div>
-                        <v-card class="misc-card"></v-card>
-                    </div>
-                </div>
-                <div class="misc-item">
-                    <div>
-                        <v-card class="misc-card"></v-card>
-                    </div>
-                    <div class="misc-detail-right">
-                        <div class="font-coolvetica" style="color: #f2fe02;font-size: 30pt;margin-bottom: 20px;">Programming Joke</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
-                            <span style="font-size: 25pt">Me:</span> I'm so sorry, my dog ate my homework<br/>
-                            <span style="font-size: 25pt">Proffesor:</span>  Your dog ate your coding assignment?<br/> 
-                            <span style="font-size: 25pt">Me:</span>Yeah, it took him a couple of bytes
-                        </div>
-                    </div>
-                </div>
-                <div class="misc-item">
-                    <div class="misc-detail-left">
-                        <div class="font-coolvetica" style="color: #f2fe02;font-size: 30pt;margin-bottom: 20px;">Quote of the day</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 100px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
-                            “Any fool can write code that a 
+can understand.” – Martin Fowler"/>
+                <MiscRightItem title="Programming Joke"/>
+                <MiscLeftItem title="Quote of the day" detail="“Any fool can write code that a 
 computer can understand. Good 
 programmers write code that humans 
-can understand.” – Martin Fowler
-                        </div>
-                    </div>
-                    <div>
-                        <v-card class="misc-card"></v-card>
-                    </div>
-                </div>
-                <div class="misc-item">
-                    <div>
-                        <v-card class="misc-card"></v-card>
-                    </div>
-                    <div class="misc-detail-right">
-                        <div class="font-coolvetica" style="color: #f2fe02;font-size: 30pt;margin-bottom: 20px;">Programming Joke</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
-                            <span style="font-size: 25pt">Me:</span> I'm so sorry, my dog ate my homework<br/>
-                            <span style="font-size: 25pt">Proffesor:</span>  Your dog ate your coding assignment?<br/> 
-                            <span style="font-size: 25pt">Me:</span>Yeah, it took him a couple of bytes
-                        </div>
-                    </div>
-                </div>
+can understand.” – Martin Fowler"/>
+                <MiscRightItem title="Programming Joke"/>
             </div>
         </v-container>
     </div>
 </template>
 <script>
+import MiscLeftItem from '../components/Misc/MiscLeftItem'
+import MiscRightItem from '../components/Misc/MiscRightItem'
 export default {
     data() {
         return {
             isshowed_menu_list: "none",
         }
+    },
+    components: {
+        MiscLeftItem,
+        MiscRightItem
     },
     methods: {
         MenuBtn_Clicked() {

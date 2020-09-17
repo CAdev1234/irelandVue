@@ -31,124 +31,52 @@
                 <v-row>
                     <v-col cols="12" sm="12" md="4" lg="4" xl="4">
                         <div style="width:100%">
-                            <v-card class="mx-auto portfolio-card" style="background-color: #212121">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1"></v-list-item-title>
-                                    <v-list-item-subtitle></v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                            </v-card>
-                            <div class="font-coolvetica" style="color: white;margin-top: 40px;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                            <div style="color: #BDBDBD;font-size:14pt">
-                                This project was about learning how to play 
+                            <PortfolioItem title="Potluck" detail="This project was about learning how to play 
     around with  nodejs and connecting an API the 
     mealdb api to it. Everytime you reload you get a 
-    new recipe to try, hence the name potluck.
-                            </div>
-                            <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+    new recipe to try, hence the name potluck."/>
                         </div>
                     </v-col>
                     <v-col cols="12" sm="12" md="4" lg="4" xl="4">
                         <div style="width:100%">
-                            <v-card class="mx-auto portfolio-card" style="background-color: #212121">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1"></v-list-item-title>
-                                    <v-list-item-subtitle></v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                            </v-card>
-                            <div class="font-coolvetica" style="color: white;margin-top: 40px;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                            <div style="color: #BDBDBD;font-size:14pt">
-                                This project was about learning how to play 
+                            <PortfolioItem title="Potluck" detail="This project was about learning how to play 
     around with  nodejs and connecting an API the 
     mealdb api to it. Everytime you reload you get a 
-    new recipe to try, hence the name potluck.
-                            </div>
-                            <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+    new recipe to try, hence the name potluck."/>
                         </div>
                     </v-col>
                     <v-col cols="12" sm="12" md="4" lg="4" xl="4">
                         <div style="width:100%">
-                            <v-card class="mx-auto portfolio-card" style="background-color: #212121">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1"></v-list-item-title>
-                                    <v-list-item-subtitle></v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                            </v-card>
-                            <div class="font-coolvetica" style="color: white;margin-top: 40px;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                            <div style="color: #BDBDBD; font-size:14pt">
-                                This project was about learning how to play 
+                            <PortfolioItem title="Potluck" detail="This project was about learning how to play 
     around with  nodejs and connecting an API the 
     mealdb api to it. Everytime you reload you get a 
-    new recipe to try, hence the name potluck.
-                            </div>
-                            <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+    new recipe to try, hence the name potluck."/>
                         </div>
                     </v-col>
                 </v-row>
                 <v-row>
                     <v-col cols="12" sm="12" md="4" lg="4" xl="4">
                         <div style="width:100%">
-                            <v-card class="mx-auto portfolio-card" style="background-color: #212121">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1"></v-list-item-title>
-                                    <v-list-item-subtitle></v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                            </v-card>
-                            <div class="font-coolvetica" style="color: white;margin-top: 40px;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                            <div style="color: #BDBDBD;font-size:14pt">
-                                This project was about learning how to play 
+                            <PortfolioItem title="Potluck" detail="This project was about learning how to play 
     around with  nodejs and connecting an API the 
     mealdb api to it. Everytime you reload you get a 
-    new recipe to try, hence the name potluck.
-                            </div>
-                            <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+    new recipe to try, hence the name potluck."/>
                         </div>
                     </v-col>
                     <v-col cols="12" sm="12" md="4" lg="4" xl="4">
                         <div style="width:100%">
-                            <v-card class="mx-auto portfolio-card" style="background-color: #212121">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1"></v-list-item-title>
-                                    <v-list-item-subtitle></v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                            </v-card>
-                            <div class="font-coolvetica" style="color: white;margin-top: 40px;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                            <div style="color: #BDBDBD;font-size:14pt">
-                                This project was about learning how to play 
+                            <PortfolioItem title="Potluck" detail="This project was about learning how to play 
     around with  nodejs and connecting an API the 
     mealdb api to it. Everytime you reload you get a 
-    new recipe to try, hence the name potluck.
-                            </div>
-                            <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+    new recipe to try, hence the name potluck."/>
                         </div>
                     </v-col>
                     <v-col cols="12" sm="12" md="4" lg="4" xl="4">
                         <div style="width:100%">
-                            <v-card class="mx-auto portfolio-card" style="background-color: #212121">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1"></v-list-item-title>
-                                    <v-list-item-subtitle></v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                            </v-card>
-                            <div class="font-coolvetica" style="color: white;margin-top: 40px;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                            <div style="color: #BDBDBD; font-size:14pt">
-                                This project was about learning how to play 
+                            <PortfolioItem title="Potluck" detail="This project was about learning how to play 
     around with  nodejs and connecting an API the 
     mealdb api to it. Everytime you reload you get a 
-    new recipe to try, hence the name potluck.
-                            </div>
-                            <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size:14pt">View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
+    new recipe to try, hence the name potluck."/>
                         </div>
                     </v-col>
                 </v-row>
@@ -157,11 +85,15 @@
     </div>
 </template>
 <script>
+import PortfolioItem from '../components/Portfolio/PortfolioItem'
 export default {
     data() {
         return {
             isshowed_menu_list: "none",
         }
+    },
+    components: {
+        PortfolioItem
     },
     methods: {
         MenuBtn_Clicked() {
@@ -198,11 +130,6 @@ export default {
 }
 .portfolio-main .row {
     direction: ltr;
-}
-.portfolio-card {
-    background-color: rgb(33, 33, 33);
-    height: 300px;
-    border-radius: 10px;
 }
 .menu .menu-btn {
     background: #f2fe02;

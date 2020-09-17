@@ -27,53 +27,13 @@
                     <div class="blog-part">
                         <div class="blog-feature" style="margin-right: 2%;width: 48%;">
                             <div class="font-coolvetica" style="color: #f2fe02;font-size:25pt">Featured Blogs</div>
-                            <v-card class="mx-auto blog-card" style="background: #262626;margin-top: 15px">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1 card-title font-coolvetica">Blog title</v-list-item-title>
-                                    <v-list-item-subtitle class="card-detail">information about the blog</v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                                <div class="goto-each-blog">
-                                    <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02"></i>
-                                </div>
-                            </v-card>
+                            <HomeBlogItem title="Blog title" bgColor="#424242"/>
                         </div>
                         <div class="blog-feature" style="margin-left: 2%;width: 48%;">
                             <div class="font-coolvetica" style="color: #f2fe02;font-size:25pt">Featured Tutorials</div>
-                            <v-card class="mx-auto blog-card" style="background: #262626;margin-top: 15px">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1 card-title font-coolvetica">Tutorial title</v-list-item-title>
-                                    <v-list-item-subtitle class="card-detail">information about the tutorial</v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                                <div class="goto-each-blog">
-                                    <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02"></i>
-                                </div>
-                            </v-card>
-                            <v-card class="mx-auto blog-card" style="background: #424242;margin-top: 15px">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1 card-title font-coolvetica">Tutorial title</v-list-item-title>
-                                    <v-list-item-subtitle class="card-detail">information about the tutorial</v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                                <div class="goto-each-blog">
-                                    <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02"></i>
-                                </div>
-                            </v-card>
-                            <v-card class="mx-auto blog-card" style="background: #757575;margin-top: 15px">
-                                <v-list-item three-line>
-                                <v-list-item-content>
-                                    <v-list-item-title class="headline mb-1 card-title font-coolvetica">Tutorial title</v-list-item-title>
-                                    <v-list-item-subtitle class="card-detail">information about the tutorial</v-list-item-subtitle>
-                                </v-list-item-content>
-                                </v-list-item>
-                                <div class="goto-each-blog">
-                                    <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02"></i>
-                                </div>
-                            </v-card>
+                            <HomeBlogItem title="Tutorial title" bgColor="#424242"/>
+                            <HomeBlogItem title="Tutorial title" bgColor="#616161"/>
+                            <HomeBlogItem title="Tutorial title" bgColor="#757575"/>
                         </div>
                     </div>
                     <div class="place-content"></div>
@@ -102,11 +62,15 @@
     </div>
 </template>
 <script>
+import HomeBlogItem from '../components/HomeBlogItem'
 export default {
     data() {
         return {
             isshowed_menu_list: "none",
         }
+    },
+    components: {
+        HomeBlogItem
     },
     methods: {
         MenuBtn_Clicked() {
@@ -140,24 +104,6 @@ export default {
 .feature .blog-part {
     display: flex;
     width: 100%;
-}
-.card-title {
-    color: white;
-    font-size: 23pt !important;
-}
-.card-detail {
-    color: #BDBDBD !important;
-    font-size: 16pt !important;
-}
-.blog-card {
-    position: relative;
-    border-radius: 10px !important;
-    padding: 10px;
-}
-.goto-each-blog {
-    position: absolute;
-    top: 10px;
-    right: 10px;
 }
 .feature .place-content {
     bottom: 20px;

@@ -28,79 +28,38 @@
                 </v-col>
             </v-row>
             <div class="portfolio-main">
-                <div style="display: flex;width:100%;margin-bottom: 20px;direction:ltr;margin-left:20px">
-                    <div class="portfolio-detail-left">
-                        <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
-                            This project was about learning how to play 
+                <PortfolioItem3Left title="Potluck" detail="This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
-new recipe to try, hence the name potluck.
-                        </div>
-                        <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size: 14pt"><i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i>View project</div>
-                    </div>
-                    <div>
-                        <v-card class="portfolio-card"></v-card>
-                    </div>
-                </div>
-                <div style="display: flex;width:100%;margin-bottom: 20px;direction:ltr">
-                    <div class="portfolio-detail-left-empty"></div>
-                    <div>
-                        <v-card class="portfolio-card"></v-card>
-                    </div>
-                    <div class="portfolio-detail-right">
-                        <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
-                            This project was about learning how to play 
+new recipe to try, hence the name potluck." />  
+                <PortfolioItem3Right title="Potluck" detail="This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
-new recipe to try, hence the name potluck.
-                        </div>
-                        <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size: 14pt">View project<i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
-                    </div>
-                </div>
-                <div style="display: flex;width:100%;margin-bottom: 20px;direction:ltr">
-                    <div class="portfolio-detail-left">
-                        <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
-                            This project was about learning how to play 
+new recipe to try, hence the name potluck."/>
+                <PortfolioItem3Left title="Potluck" detail="This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
-new recipe to try, hence the name potluck.
-                        </div>
-                        <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size: 14pt"><i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i>View project</div>
-                    </div>
-                    <div>
-                        <v-card class="portfolio-card"></v-card>
-                    </div>
-                    <div class="portfolio-detail-right"></div>
-                </div>
-                <div style="display: flex;width:100%;margin-bottom: 20px;direction:ltr">
-                    <div class="portfolio-detail-left-empty"></div>
-                    <div>
-                        <v-card class="portfolio-card"></v-card>
-                    </div>
-                    <div class="portfolio-detail-right">
-                        <div class="font-coolvetica" style="color: white;font-size: 20pt;margin-bottom: 20px;">Potluck</div>
-                        <div style="color: #BDBDBD;line-height: 1.6;font-size: 14pt; height: 160px; overflow-y: scroll;overflow-x: hidden;overflow: auto;">
-                            This project was about learning how to play 
+new recipe to try, hence the name potluck." />  
+                <PortfolioItem3Right title="Potluck" detail="This project was about learning how to play 
 around with  nodejs and connecting an API the 
 mealdb api to it. Everytime you reload you get a 
-new recipe to try, hence the name potluck.
-                        </div>
-                        <div style="margin-top: 40px;color: rgb(242, 254, 2);text-decoration: underline;font-size: 14pt">View project<i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
-                    </div>
-                </div>
+new recipe to try, hence the name potluck."/>
             </div>
         </v-container>
     </div>
 </template>
 <script>
+import PortfolioItem3Left from '../components/Portfolio/PortfolioItem3Left'
+import PortfolioItem3Right from '../components/Portfolio/PortfolioItem3Right'
 export default {
     data() {
         return {
             isshowed_menu_list: "none",
         }
+    },
+    components: {
+        PortfolioItem3Left,
+        PortfolioItem3Right
     },
     methods: {
         MenuBtn_Clicked() {
@@ -135,27 +94,6 @@ export default {
     height: 600px;
     direction: rtl;
 }
-.portfolio-detail-left {
-    width: 20%;
-    direction: rtl;
-    margin-left: 70px;
-}
-.portfolio-detail-left-empty {
-    width: 20%;
-    margin-left: 70px;
-}
-.portfolio-card {
-    border-radius: 10px;
-    background-color: #212121;
-    width: 500px;
-    height: 300px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.portfolio-detail-right {
-    width: 20%;
-    direction: ltr;
-}
 .menu .menu-btn {
     background: #f2fe02;
     width: 50px;
@@ -187,7 +125,7 @@ export default {
         padding-left: 10px;
     }
     .portfolio-detail-left-empty {
-        width: 0px;
+        width: 0px !important;
     }
 }
 </style>

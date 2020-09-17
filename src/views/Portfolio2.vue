@@ -30,59 +30,24 @@
             <div class="portfolio-main">
                 <v-row style="direction: ltr;">
                     <v-col cols="12" sm="12" md="4" lg="4" xl="4">
-                        <v-card class="mx-auto portfolio-card">
-                            <v-card-title class="headline mb-1 font-coolvetica" style="font-size: 20pt;color: white;">
-                                Potluck
-                            </v-card-title>
-                            <v-card-text>
-                                    This project was about learning how to play 
+                        <PortfolioItem2 title="Potluck" detail="This project was about learning how to play 
 around with  nodejs and connecting an API 
 the mealdb api to it. Everytime you reload 
 you get a new recipe to try, hence the name 
-potluck.
-                            </v-card-text>
-                            <v-card-actions>
-                                <div>View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
-                            </v-card-actions>
-                        </v-card>
-                        <v-card class="mx-auto portfolio-card">
-                            <v-card-title class="headline mb-1 font-coolvetica" style="font-size: 20pt;color: white;">
-                                Potluck
-                            </v-card-title>
-                            <v-card-text>
-                                    This project was about learning how to play 
+potluck."/>
+                       <PortfolioItem2 title="Potluck" detail="This project was about learning how to play 
 around with  nodejs and connecting an API 
 the mealdb api to it. Everytime you reload 
 you get a new recipe to try, hence the name 
-potluck.
-                            </v-card-text>
-                            <v-card-actions>
-                                <div>View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
-                            </v-card-actions>
-                        </v-card>
-                        <v-card class="mx-auto portfolio-card">
-                            <v-card-title class="headline mb-1 font-coolvetica" style="font-size: 20pt;color: white;">
-                                Potluck
-                            </v-card-title>
-                            <v-card-text>
-                                    This project was about learning how to play 
+potluck."/>
+                        <PortfolioItem2 title="Potluck" detail="This project was about learning how to play 
 around with  nodejs and connecting an API 
 the mealdb api to it. Everytime you reload 
 you get a new recipe to try, hence the name 
-potluck.
-                            </v-card-text>
-                            <v-card-actions>
-                                <div>View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
-                            </v-card-actions>
-                        </v-card>
+potluck."/>
                     </v-col>
                     <v-col cols="12" sm="12" md="4" lg="4" xl="4">
-                        <v-card class="mx-auto portfolio-card">
-                            <v-card-title class="headline mb-1 font-coolvetica" style="font-size: 20pt;color: white;">
-                                Potluck
-                            </v-card-title>
-                            <v-card-text>
-                                    This project was about learning how to play 
+                        <PortfolioItem2 title="Potluck" detail="This project was about learning how to play 
 around with  nodejs and connecting an API 
 the mealdb api to it. Everytime you reload 
 you get a new recipe to try, hence the name 
@@ -90,33 +55,17 @@ potluck. This project was about learning how
 to play around with  nodejs and connecting 
 an API the mealdb api to it. Everytime you 
 reload you get a new recipe to try, hence the 
-name potluck.
-                            </v-card-text>
-                            <v-card-actions>
-                                <div>View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
-                            </v-card-actions>
-                        </v-card>
+name potluck."/>
+                        
                     </v-col>
                     <v-col cols="12" sm="12" md="4" lg="4" xl="4" style="padding-top: 250px">
-                        <v-card class="mx-auto portfolio-card">
-                            <v-card-title class="headline mb-1 font-coolvetica" style="font-size: 20pt;color: white;">
-                                Potluck
-                            </v-card-title>
-                            <v-card-text>
-                                    This project was about learning how to play 
+                        <PortfolioItem2 title="Potluck" detail="This project was about learning how to play 
 around with  nodejs and connecting an API 
 the mealdb api to it. Everytime you reload 
 you get a new recipe to try, hence the name 
 potluck. This project was about learning how 
 to play around with  nodejs and connecting 
-an API the mealdb api to it. Everytime you 
-reload you get a new recipe to try, hence the 
-name potluck.
-                            </v-card-text>
-                            <v-card-actions>
-                                <div>View project <i class="fa fa-external-link" style="font-size:15px;color:#f2fe02;margin-left:10px"></i></div>
-                            </v-card-actions>
-                        </v-card>
+an API the mealdb api to it. Everytime you"/>
                     </v-col>
                 </v-row>
             </div>
@@ -124,11 +73,15 @@ name potluck.
     </div>
 </template>
 <script>
+import PortfolioItem2 from '../components/Portfolio/PortfolioItem2'
 export default {
     data() {
         return {
             isshowed_menu_list: "none",
         }
+    },
+    components: {
+        PortfolioItem2
     },
     methods: {
         MenuBtn_Clicked() {
@@ -161,27 +114,6 @@ export default {
     direction: rtl;
     margin-right: 100px;
     padding-left: 20px;
-}
-.portfolio-card {
-    background-color: #212121;
-    width: 500px;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-.v-card__text {
-    color: white !important;
-    line-height: 1.6;
-    font-size:14pt;
-    padding-bottom: 0px;
-}
-.v-card__actions div{
-    margin-top: 20px;
-    color: rgb(242, 254, 2);
-    text-decoration: underline;
-    margin-left: 10px;
-    font-size:14pt;
-    padding-bottom: 0px !important;
 }
 .menu .menu-btn {
     background: #f2fe02;
